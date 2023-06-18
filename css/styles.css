@@ -1,75 +1,410 @@
-/* Styles
+/* Styles*/
 
-/* Background */ 
-.ui.toast-container .toast-box {
-    z-index:999999;
-}
-.jnotification{
-    position: sticky;
-    top: 0;
-    right: 0;
-}
-.spinerconsulta{
-    position: sticky;
-    display: none;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
- 
- 
-    top: '0';
-    left: '0';
-   
+/* Backs*/
 
-    background-color: 'rgba(0,0,0,0.5)';
-    display: 'flex';
-    justify-content: center;
-    align-items: 'center';
-    
+:root{
+    --white: #ffff;
+    --bg-negro1: #14171A;
+    --bg-negro2: #282E34;
+    --bg-negro3: #3C454E;
+    --bg-negro4: #505C68;
+
+
+    --bg-verde1: #7A9C4F;
+    --bg-verde2: #90AF6D;
+    --bg-verde3: #A6C28A;
+    --bg-verde4: #BBD4A8;
+
+
+    --bg-gris1: #D1D0CE;
+    --bg-gris2: #D8D8D7;
+    --bg-gris3: #DFDFDF;
+    --bg-gris4: #E5E6E7;
+
+
+    --bg-naranja1: #FF7F11;
+    --bg-naranja2: #FF9642;
+    --bg-naranja3: #FFAC73;
+    --bg-naranja4: #FFC3A3;
+
+
 }
+
+.text-green1{
+    color: var(--bg-verde1);
+}
+.text-green2{
+    color: var(--bg-verde2);
+}
+.text-green3{
+    color: var(--bg-verde3);
+}
+.text-green4{
+    color: var(--bg-verde4);
+}
+
+.btn-green{
+    border: solid 2px var(--bg-verde1);
+    color: #7A9C4F;
+    border-radius: 10px;
+}
+
+
+.bg-gris{
+    background: #d0cece;
+}
+
+.bg-gris2{
+    background: var(--bg-gris2);
+}
+
+.bg-negro1{
+    background: var(--bg-negro1);
+}
+
+
+.bg-negro2{
+    background: var(--bg-negro2);
+}
+
+.text-menu{
+    font-size: 1.1em;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.text-menu:hover{
+    color: #b0c88f;
+}
+
 .bg-header{
-    background: url(../img/internet-por-fibra-optica-meganet-rapido-veloz-mejor-internet5.jpg);
-    background-repeat: no-repeat;
+    background-image: url(/img/img001-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
     background-size: cover;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bg-header2{
-    background: url(../img/internet-por-fibra-optica-meganet-rapido-veloz-mejor-internet3.jpg);
-    background-repeat: no-repeat;
+    background-image: url(/img/img002-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
     background-size: cover;
-    background-position:center;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  appearance: none; 
-  margin: 0; 
-}
-
-/* Text Efx */ 
-
-
-.text-green{
-    color: #ade61d;
-}
-
-.efx-zoom-1 .icono{
-    transition: all 0.3s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 
-
-.efx-zoom-1:hover .icono {
-    transform:scale(1.2) translateY(-10px);
+.bg-header3{
+    background-image: url(/img/img003-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.zoom-1{
-    transition: all 0.5s;
+
+.bg-header-efx{
+    background: rgba(3, 17, 10, 0.528);
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-mision{
+    background-image: url(/img/001-mision-vision-soleg-soluciones-logisticas-guayaquil-ecuador-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-vision{
+    background-image:  url(/img/001-mision-vision-soleg-soluciones-logisticas-guayaquil-ecuador-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
-
-.zoom-1:hover{
-    transform:scale(1.05) ;
+.box.shadow1{
+    box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
+    -webkit-box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
+    -moz-box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
 }
+
+.tittle{
+    color: var(--bg-verde2);
+}
+
+
+.img-link, .tittle{
+    transition: all 0.3s ease;
+}
+
+.link-services:hover .img-link {
+    transform: translateY(-15px);
+}
+
+
+.link-services:hover .tittle{
+    color: var(--bg-verde1);
+}
+
+.text-negro3{
+    color: var(--bg-negro3) ;
+}
+
+#covagu:hover{
+    color: var(--bg-verde3);
+}
+
+.shadow-box1{
+    box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+}
+
+.btn-naranja {
+    color:#fff ;
+    font-weight: bold;
+    background-color:var(--bg-naranja1);
+    border-color: var(--bg-naranja1);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+  }
+
+  .btn-naranja:hover {
+    color:#fff ;
+    background-color:var(--bg-naranja2);
+    border-color:var(--bg-naranja2);
+  }
+
+  .img-efx{
+    -webkit-filter: grayscale(85%);
+    filter: grayscale(85%);
+    cursor: pointer;
+    box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    transition: all 0.3s linear;
+  }
+
+  .img-efx:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+
+
+
+  /* ESTILOS DE LA ACTUALIZACION JUNIO 2023 */
+
+
+
+.back-art{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+:root{
+    --white: #ffff;
+    --bg-negro1: #14171A;
+    --bg-negro2: #282E34;
+    --bg-negro3: #3C454E;
+    --bg-negro4: #505C68;
+
+
+    --bg-verde1: #7A9C4F;
+    --bg-verde2: #90AF6D;
+    --bg-verde3: #A6C28A;
+    --bg-verde4: #BBD4A8;
+
+
+    --bg-gris1: #D1D0CE;
+    --bg-gris2: #D8D8D7;
+    --bg-gris3: #DFDFDF;
+    --bg-gris4: #E5E6E7;
+
+
+    --bg-naranja1: #FF7F11;
+    --bg-naranja2: #FF9642;
+    --bg-naranja3: #FFAC73;
+    --bg-naranja4: #FFC3A3;
+
+
+}
+
+.text-green1{
+    color: var(--bg-verde1);
+}
+.text-green2{
+    color: var(--bg-verde2);
+}
+.text-green3{
+    color: var(--bg-verde3);
+}
+.text-green4{
+    color: var(--bg-verde4);
+}
+
+.btn-green{
+    border: solid 2px var(--bg-verde1);
+    color: #7A9C4F;
+    border-radius: 10px;
+}
+
+
+.bg-gris{
+    background: #d0cece;
+}
+
+.bg-gris2{
+    background: var(--bg-gris2);
+}
+
+.bg-negro1{
+    background: var(--bg-negro1);
+}
+
+
+.bg-negro2{
+    background: var(--bg-negro2);
+}
+
+.text-menu{
+    font-size: 1.1em;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.text-menu:hover{
+    color: #b0c88f;
+}
+
+.bg-header{
+    background-image: url(/img/img001-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-header2{
+    background-image: url(/img/img002-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+
+.bg-header3{
+    background-image: url(/img/img003-header-soleg-soluciones-logisticas-guayaquil-ecuador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.bg-header-efx{
+    background: rgba(3, 17, 10, 0.528);
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-mision{
+    background-image: url(/img/001-mision-vision-soleg-soluciones-logisticas-guayaquil-ecuador-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-vision{
+    background-image:  url(/img/001-mision-vision-soleg-soluciones-logisticas-guayaquil-ecuador-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.box.shadow1{
+    box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
+    -webkit-box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
+    -moz-box-shadow: -1px 10px 5px 0px rgba(0,255,101,0.61);
+}
+
+.tittle{
+    color: var(--bg-verde2);
+}
+
+
+.img-link, .tittle{
+    transition: all 0.3s ease;
+}
+
+.link-services:hover .img-link {
+    transform: translateY(-15px);
+}
+
+
+.link-services:hover .tittle{
+    color: var(--bg-verde1);
+}
+
+.text-negro3{
+    color: var(--bg-negro3) ;
+}
+
+#covagu:hover{
+    color: var(--bg-verde3);
+}
+
+.shadow-box1{
+    box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 31px 4px rgba(0,0,0,0.15);
+}
+
+.btn-naranja {
+    color:#fff ;
+    font-weight: bold;
+    background-color:var(--bg-naranja1);
+    border-color: var(--bg-naranja1);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+  }
+
+  .btn-naranja:hover {
+    color:#fff ;
+    background-color:var(--bg-naranja2);
+    border-color:var(--bg-naranja2);
+  }
+
+  .img-efx{
+    -webkit-filter: grayscale(85%);
+    filter: grayscale(85%);
+    cursor: pointer;
+    box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.21);
+    transition: all 0.3s linear;
+  }
+
+  .img-efx:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+

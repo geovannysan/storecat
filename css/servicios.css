@@ -1,0 +1,118 @@
+/* Styles */
+
+:root{
+    --bs-verde: #469e3f;
+    --bs-verde2: #5d8233;
+    --bs-verde3: #759353;
+    --bs-verde4: #577d2c;
+}
+
+.shadow-1{
+    box-shadow: 0px 10px 21px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 21px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -5px rgba(0,0,0,0.75);
+}
+.shadow-2{
+    box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.75); 
+-webkit-box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.75);
+}
+
+.text-verde{
+    color: var(--bs-verde2);
+}
+
+.text-verde3{
+    color: var(--bs-verde3);
+}
+.text-verde3:hover{
+    color: var(--bs-verde4);
+}
+
+
+.almacenamiento{
+    background-image: url(../img/almacenamiento.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.bodega{
+    background-image: url(../img/almacen/bodegas-soleg.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+
+.estibas{
+    background: url(../img/estibas/estibas.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.estibadores{
+    background: url(../img/estibas/estibadores.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.carga-estibas{
+    background: url(../img/estibas/carga-estiba-soleg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+
+
+.maquila{
+    background: url(../img/maquila/maquila.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.maquila-soleg{
+    background: url(../img/maquila/maquila-trabajos-soleg.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+
+
+.transporte{
+    background: url(../img/transporte/transporte.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.transporte-seguro{
+    background: url(../img/transporte/t.png);
+    background-size: cover;
+    background-position: 0 -550px;
+    min-height: 280px;
+}
+
+.inHouse{
+    background: url(../img/personal/personal\ in\ house-soleg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.personal-soleg{
+    background: url(../img/personal/personal-soleg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+.soleg-personal{
+    background: url(../img/personal/soleg-personal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    min-height: 280px;
+}
+
+
+.cuadros{
+    background: url(../img/efx-cuadros-soleg.png);
+    background-position: center;
+    opacity: 100%;
+}
